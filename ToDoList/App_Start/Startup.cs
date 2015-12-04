@@ -6,7 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Http;
 
-[assembly: OwinStartup(typeof(ToDoList.App_Start.Startup)]
+[assembly: OwinStartup(typeof(ToDoList.App_Start.Startup))]
 namespace ToDoList.App_Start
 {
 	public class Startup
