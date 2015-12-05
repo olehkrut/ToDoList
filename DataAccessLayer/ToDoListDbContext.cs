@@ -16,7 +16,6 @@ namespace DataAccessLayer
 		{
 		}
 
-		public DbSet<ApplicationUser> Users { get; set; }
 		public DbSet<ToDoItem> ToDoItems { get; set; }
 
     }
