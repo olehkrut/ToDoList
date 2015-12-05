@@ -1,0 +1,14 @@
+D:\University\ПМІ-32\ToDoList\DataAccess.Entities\bin\Debug\DataAccess.Entities.dll.config
+D:\University\ПМІ-32\ToDoList\DataAccess.Entities\bin\Debug\DataAccess.Entities.dll
+D:\University\ПМІ-32\ToDoList\DataAccess.Entities\bin\Debug\DataAccess.Entities.pdb
+D:\University\ПМІ-32\ToDoList\DataAccess.Entities\bin\Debug\EntityFramework.dll
+D:\University\ПМІ-32\ToDoList\DataAccess.Entities\bin\Debug\EntityFramework.SqlServer.dll
+D:\University\ПМІ-32\ToDoList\DataAccess.Entities\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\University\ПМІ-32\ToDoList\DataAccess.Entities\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\University\ПМІ-32\ToDoList\DataAccess.Entities\bin\Debug\EntityFramework.xml
+D:\University\ПМІ-32\ToDoList\DataAccess.Entities\bin\Debug\EntityFramework.SqlServer.xml
+D:\University\ПМІ-32\ToDoList\DataAccess.Entities\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\University\ПМІ-32\ToDoList\DataAccess.Entities\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\University\ПМІ-32\ToDoList\DataAccess.Entities\obj\Debug\DataAccess.Entities.csprojResolveAssemblyReference.cache
+D:\University\ПМІ-32\ToDoList\DataAccess.Entities\obj\Debug\DataAccess.Entities.dll
+D:\University\ПМІ-32\ToDoList\DataAccess.Entities\obj\Debug\DataAccess.Entities.pdb
