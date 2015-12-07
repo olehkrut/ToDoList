@@ -87,7 +87,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Index.html" />
+    <Content Include="Scripts\app.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\Libs\angular-mocks.js" />
     <Content Include="Scripts\Libs\angular-resource.js" />
     <Content Include="Scripts\Libs\angular-resource.min.js" />
@@ -95,9 +103,19 @@
     <Content Include="Scripts\Libs\angular-route.min.js" />
     <Content Include="Scripts\Libs\angular.js" />
     <Content Include="Scripts\Libs\angular.min.js" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
     <None Include="Scripts\Libs\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\Libs\jquery-2.1.4.js" />
     <Content Include="Scripts\Libs\jquery-2.1.4.min.js" />
+    <Content Include="Scripts\ToDoItemList\ToDoItemListController.js" />
+    <Content Include="Views\toDoItemList.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -122,7 +140,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
