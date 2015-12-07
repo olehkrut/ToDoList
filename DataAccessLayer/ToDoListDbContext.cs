@@ -1,4 +1,5 @@
-﻿using System.Data.Entity;
+﻿using System;
+using System.Data.Entity;
 using DataAccess.Entities;
 using Microsoft.AspNet.Identity.EntityFramework;
 
@@ -13,5 +14,5 @@ namespace DataAccessLayer
 
 		public DbSet<ToDoItem> ToDoItems { get; set; }
 
-    }
+	}
 }

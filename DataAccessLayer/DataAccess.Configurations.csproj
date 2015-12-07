@@ -52,6 +52,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\201512071813311_pesik.cs" />
+    <Compile Include="Migrations\201512071813311_pesik.Designer.cs">
+      <DependentUpon>201512071813311_pesik.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ToDoListDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -65,6 +69,11 @@
       <Project>{65164d41-bc8e-4003-afbd-fef76579213f}</Project>
       <Name>DataAccess.Entities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201512071813311_pesik.resx">
+      <DependentUpon>201512071813311_pesik.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

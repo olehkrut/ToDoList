@@ -25,3 +25,4 @@ D:\ProjectsVS\ToDoList\DataAccess.Entities\bin\Debug\EntityFramework.dll
 D:\ProjectsVS\ToDoList\DataAccess.Entities\bin\Debug\EntityFramework.SqlServer.dll
 D:\ProjectsVS\ToDoList\DataAccess.Entities\bin\Debug\EntityFramework.xml
 D:\ProjectsVS\ToDoList\DataAccess.Entities\bin\Debug\EntityFramework.SqlServer.xml
+D:\ProjectsVS\ToDoList\DataAccess.Entities\obj\Debug\DataAccess.Entities.csprojResolveAssemblyReference.cache
