@@ -87,6 +87,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Index.html" />
+    <Content Include="Scripts\Libs\angular-mocks.js" />
+    <Content Include="Scripts\Libs\angular-resource.js" />
+    <Content Include="Scripts\Libs\angular-resource.min.js" />
+    <Content Include="Scripts\Libs\angular-route.js" />
+    <Content Include="Scripts\Libs\angular-route.min.js" />
+    <Content Include="Scripts\Libs\angular.js" />
+    <Content Include="Scripts\Libs\angular.min.js" />
+    <None Include="Scripts\Libs\jquery-2.1.4.intellisense.js" />
+    <Content Include="Scripts\Libs\jquery-2.1.4.js" />
+    <Content Include="Scripts\Libs\jquery-2.1.4.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -97,6 +108,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="Scripts\Libs\angular.min.js.map" />
+    <Content Include="Scripts\Libs\angular-route.min.js.map" />
+    <Content Include="Scripts\Libs\angular-resource.min.js.map" />
+    <Content Include="Scripts\Libs\jquery-2.1.4.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -107,6 +122,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
