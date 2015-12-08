@@ -1,11 +1,10 @@
-﻿app.factory("ToDoItemService", [
-	"$http", "$q",
-	function($http, $q) {
+﻿app.factory("ToDoItemService", [ "$resource",
+	function($resource) {
 		var toDoItemService = {
 			getAllItems: getAllItems
 		}
 
-		return toDoItemService;
+		return $resource('/api/toDoItem/:id', { id: '@id' }, { update: { method: 'PUT' } });
 
 		function getAllItems() {
 			var deffered = $q.defer();
@@ -16,6 +15,10 @@
 			});
 
 			return deffered.promise;
+		}
+
+		function getItemsByQuery(query) {
+			var deffered = $q.defer();
 		}
 
 	}

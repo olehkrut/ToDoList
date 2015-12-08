@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Web.Http;
 using DataAccess.Entities;
@@ -16,14 +17,8 @@ namespace ToDoList.Controllers
 				var pes = context.ToDoItems.First();
 				return context.ToDoItems.ToList();
 			}
-			
 		}
 
-		// GET api/<controller>/5
-		public string Get(int id)
-		{
-			return "value";
-		}
 
 		// POST api/<controller>
 		public void Post([FromBody]string value)

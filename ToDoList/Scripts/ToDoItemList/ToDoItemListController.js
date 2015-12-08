@@ -1,10 +1,10 @@
 ﻿app.controller('ToDoItemListController', ["$scope", "$location", "ToDoItemService",
 	function ($scope, $location, toDoItemService) {
+		$scope.reset = function () {
+			$scope.items = toDoItemService.query();
+		};
 
-		toDoItemService.getAllItems().then(function(response) {
-			$scope.items = response;
-		}, function(error) {
-			console.log(error);
-		});
+		$scope.reset();
+		
 	}
 ]);
