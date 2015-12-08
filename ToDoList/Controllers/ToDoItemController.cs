@@ -13,8 +13,8 @@ namespace ToDoList.Controllers
 		{
 			using (ToDoListDbContext context = new ToDoListDbContext())
 			{
-				context.ToDoItems.Add(new ToDoItem());
-				return context.ToDoItems;
+				var pes = context.ToDoItems.First();
+				return context.ToDoItems.ToList();
 			}
 			
 		}

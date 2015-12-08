@@ -30,5 +30,6 @@ D:\ProjectsVS\ToDoList\DataAccessLayer\bin\Debug\Microsoft.AspNet.Identity.Core.
 D:\ProjectsVS\ToDoList\DataAccessLayer\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 D:\ProjectsVS\ToDoList\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 D:\ProjectsVS\ToDoList\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
-D:\ProjectsVS\ToDoList\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.pesik.resources
+D:\ProjectsVS\ToDoList\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.pesik2.resources
 D:\ProjectsVS\ToDoList\DataAccessLayer\obj\Debug\DataAccess.Configurations.csproj.GenerateResource.Cache
+D:\ProjectsVS\ToDoList\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.pesik.resources
