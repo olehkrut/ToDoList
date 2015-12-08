@@ -9,7 +9,7 @@ namespace DataAccessLayer.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(ToDoListDbContext context)
@@ -21,7 +21,7 @@ namespace DataAccessLayer.Migrations
 				Priority = (byte)r.Next(10),
 				ToDoContent = o.ToString()
 			}).ToArray();
-			context.ToDoItems.AddOrUpdate(item => new { item.ToDoContent }, items);
+			context.ToDoItems.AddOrUpdate(items);
             //  This method will be called after migrating to the latest version.
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 

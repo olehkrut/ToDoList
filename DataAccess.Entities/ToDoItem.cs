@@ -9,7 +9,7 @@ namespace DataAccess.Entities
 		public byte Priority { get; set; }
 		public DateTime? DueDate { get; set; }
 
-		public virtual ApplicationUser Owner { get; set; }
-		public virtual string OwnerId { get; set; }
+		//public virtual ApplicationUser Owner { get; set; }
+		//public virtual string OwnerId { get; set; }
 	}
 }

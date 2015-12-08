@@ -38,6 +38,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Owin, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
@@ -115,6 +127,7 @@
     <Content Include="Scripts\Libs\jquery-2.1.4.js" />
     <Content Include="Scripts\Libs\jquery-2.1.4.min.js" />
     <Content Include="Scripts\ToDoItemList\ToDoItemListController.js" />
+    <Content Include="Scripts\ToDoItemList\ToDoItemService.js" />
     <Content Include="Views\toDoItemList.html" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -140,6 +153,16 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccess.Entities\DataAccess.Entities.csproj">
+      <Project>{65164d41-bc8e-4003-afbd-fef76579213f}</Project>
+      <Name>DataAccess.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccessLayer\DataAccess.Configurations.csproj">
+      <Project>{e18c8039-52f4-476d-b641-bbd773d037b5}</Project>
+      <Name>DataAccess.Configurations</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

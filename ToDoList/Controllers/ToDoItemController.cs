@@ -1,18 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
+using DataAccess.Entities;
+using DataAccessLayer;
 
 namespace ToDoList.Controllers
 {
 	public class ToDoItemController : ApiController
 	{
-		// GET api/<controller>
-		public IEnumerable<string> Get()
+		public IEnumerable<ToDoItem> Get()
 		{
-			return new string[] { "value1", "value2" };
+			using (ToDoListDbContext context = new ToDoListDbContext())
+			{
+				var pes = context.ToDoItems.First();
+				return context.ToDoItems.ToList();
+			}
+			
 		}
 
 		// GET api/<controller>/5
