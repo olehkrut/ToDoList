@@ -7,10 +7,8 @@ D:\University\ПМІ-32\ToDoList\DataAccessLayer\bin\Debug\EntityFramework.SqlSe
 D:\University\ПМІ-32\ToDoList\DataAccessLayer\bin\Debug\Microsoft.AspNet.Identity.Core.dll
 D:\University\ПМІ-32\ToDoList\DataAccessLayer\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
 D:\University\ПМІ-32\ToDoList\DataAccessLayer\bin\Debug\DataAccess.Entities.pdb
-D:\University\ПМІ-32\ToDoList\DataAccessLayer\bin\Debug\EntityFramework.xml
 D:\University\ПМІ-32\ToDoList\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
 D:\University\ПМІ-32\ToDoList\DataAccessLayer\bin\Debug\Microsoft.AspNet.Identity.Core.xml
-D:\University\ПМІ-32\ToDoList\DataAccessLayer\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 D:\University\ПМІ-32\ToDoList\DataAccessLayer\obj\Debug\DataAccess.Configurations.csprojResolveAssemblyReference.cache
 D:\University\ПМІ-32\ToDoList\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 D:\University\ПМІ-32\ToDoList\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
