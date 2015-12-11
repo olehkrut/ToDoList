@@ -1,13 +1,17 @@
 ﻿var app = angular.module("ToDoApp", ["ngResource", "ngRoute"])
 	.config(function ($routeProvider) {
 
-		$routeProvider.when('/', {
+		$routeProvider.when('/ToDoItems', {
 			controller: 'ToDoItemListController',
 			templateUrl: 'Scripts/ToDoItemList/toDoItemList.html'
 		})
 			.when('/new', {
 				controller: 'CreateNewItemController',
-				templateUrl: 'detail.html'
+				templateUrl: 'Scripts/NewItem/detail.html'
+			})
+			.when('/', {
+				controller: "LoginController",
+				templateUrl: "Views/LoginPage.html"
 			})
 			.otherwise({
 				redirectTo: '/'

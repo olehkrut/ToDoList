@@ -103,9 +103,12 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\LoginPage.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Index.html" />
     <Content Include="Scripts\app.js" />
+    <Content Include="Scripts\Auth\AuthService.js" />
+    <Content Include="Scripts\Auth\LoginController.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\Libs\angular-mocks.js" />
@@ -131,11 +134,13 @@
     <Content Include="Scripts\ToDoItemList\ToDoItemListController.js" />
     <Content Include="Scripts\ToDoItemList\ToDoItemService.js" />
     <Content Include="Scripts\ToDoItemList\toDoItemList.html" />
+    <Content Include="Views\LoginPage.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\Startup.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ToDoItemController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -155,7 +160,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataAccess.Entities\DataAccess.Entities.csproj">
