@@ -2,7 +2,6 @@
 using System.Configuration;
 using System.Data.Entity;
 using DataAccess.Entities;
-using Microsoft.AspNet.Identity.EntityFramework;
 using DataAccessLayer.Migrations;
 
 namespace DataAccessLayer
