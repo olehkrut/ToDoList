@@ -1,13 +1,10 @@
-﻿using Microsoft.Owin;
+﻿using System.Web.Http;
+using Microsoft.Owin;
 using Owin;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Http;
+using ToDoList;
 
-[assembly: OwinStartup(typeof(ToDoList.App_Start.Startup))]
-namespace ToDoList.App_Start
+[assembly: OwinStartup(typeof(Startup))]
+namespace ToDoList
 {
 	public class Startup
 	{
