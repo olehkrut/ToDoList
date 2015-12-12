@@ -31,3 +31,17 @@ D:\University\ПМІ-32\ToDoList\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 D:\University\ПМІ-32\ToDoList\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
 D:\University\ПМІ-32\ToDoList\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.pesYoupta.resources
 D:\University\ПМІ-32\ToDoList\DataAccessLayer\obj\Debug\DataAccess.Configurations.csproj.GenerateResource.Cache
+F:\Любомир\C# exer\newto\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+F:\Любомир\C# exer\newto\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+F:\Любомир\C# exer\newto\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+F:\Любомир\C# exer\newto\DataAccessLayer\bin\Debug\DataAccess.Entities.dll
+F:\Любомир\C# exer\newto\DataAccessLayer\bin\Debug\EntityFramework.dll
+F:\Любомир\C# exer\newto\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+F:\Любомир\C# exer\newto\DataAccessLayer\bin\Debug\DataAccess.Entities.pdb
+F:\Любомир\C# exer\newto\DataAccessLayer\bin\Debug\EntityFramework.xml
+F:\Любомир\C# exer\newto\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+F:\Любомир\C# exer\newto\DataAccessLayer\obj\Debug\DataAccess.Configurations.csprojResolveAssemblyReference.cache
+F:\Любомир\C# exer\newto\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.pesYoupta.resources
+F:\Любомир\C# exer\newto\DataAccessLayer\obj\Debug\DataAccess.Configurations.csproj.GenerateResource.Cache
+F:\Любомир\C# exer\newto\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+F:\Любомир\C# exer\newto\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

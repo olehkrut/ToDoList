@@ -105,6 +105,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\LoginPage.css" />
     <Content Include="Content\ui-bootstrap-csp.css" />
+    <Content Include="detail.html" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Index.html" />
     <Content Include="Scripts\angular-local-storage.js" />

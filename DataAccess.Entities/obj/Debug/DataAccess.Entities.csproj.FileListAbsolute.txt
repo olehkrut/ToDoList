@@ -24,3 +24,16 @@ D:\University\ПМІ-32\ToDoList\DataAccess.Entities\bin\Debug\Microsoft.AspNet.
 D:\University\ПМІ-32\ToDoList\DataAccess.Entities\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 D:\University\ПМІ-32\ToDoList\DataAccess.Entities\obj\Debug\DataAccess.Entities.dll
 D:\University\ПМІ-32\ToDoList\DataAccess.Entities\obj\Debug\DataAccess.Entities.pdb
+F:\Любомир\C# exer\newto\DataAccess.Entities\bin\Debug\DataAccess.Entities.dll.config
+F:\Любомир\C# exer\newto\DataAccess.Entities\bin\Debug\DataAccess.Entities.dll
+F:\Любомир\C# exer\newto\DataAccess.Entities\bin\Debug\DataAccess.Entities.pdb
+F:\Любомир\C# exer\newto\DataAccess.Entities\bin\Debug\EntityFramework.dll
+F:\Любомир\C# exer\newto\DataAccess.Entities\bin\Debug\EntityFramework.SqlServer.dll
+F:\Любомир\C# exer\newto\DataAccess.Entities\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+F:\Любомир\C# exer\newto\DataAccess.Entities\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\Любомир\C# exer\newto\DataAccess.Entities\bin\Debug\EntityFramework.SqlServer.xml
+F:\Любомир\C# exer\newto\DataAccess.Entities\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+F:\Любомир\C# exer\newto\DataAccess.Entities\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\Любомир\C# exer\newto\DataAccess.Entities\obj\Debug\DataAccess.Entities.csprojResolveAssemblyReference.cache
+F:\Любомир\C# exer\newto\DataAccess.Entities\obj\Debug\DataAccess.Entities.dll
+F:\Любомир\C# exer\newto\DataAccess.Entities\obj\Debug\DataAccess.Entities.pdb

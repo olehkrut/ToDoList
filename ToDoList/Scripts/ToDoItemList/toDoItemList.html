@@ -10,13 +10,17 @@
 	<th>Todo</th>
 	<th>Priority</th>
 	<th>Due</th>
-	<th><a href="#/new"><i class="icon-plus-sign"></i></a></th>
+	<th><a href="#/new"><i class="glyphicon-plus-sign"></i></a></th>
 	</thead>
 	<tbody>
 	<tr ng-repeat="item in items">
 		<td>{{item.toDoContent}}</td>
 		<td>{{item.priority}}</td>
 		<td>{{item.dueDate}}</td>
+        <td>
+            <a href="#/edit/{{item.TodoItemId}}"><i class="glyphicon-edit"></i></a>
+            <!--<a ng-click="delete()"><i class="icon-remove"></i></a>-->
+        </td>
 	</tr>
 	</tbody>
 </table>
