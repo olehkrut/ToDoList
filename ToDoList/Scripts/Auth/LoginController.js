@@ -8,7 +8,7 @@
 				}).then(function (ok) {
 					$location.path("/toDoItems");
 				}, function (error) {
-					$scope.errorMessage = "such user already exists";
+					$scope.errorMessage = angular.fromJson(error).message;
 				});
 			}
 		}

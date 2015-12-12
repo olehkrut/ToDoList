@@ -2,11 +2,12 @@
 	function ($scope, $modalInstance, $location, AuthService) {
 		$scope.closeModal = function () {
 			$modalInstance.close();
+			$location.path("/");
 		}
 
 		$scope.register = function () {
 			if ($scope.registerForm.$valid) {
-				if ($scope.password === $scope.repearPassword) {
+				if ($scope.password === $scope.repeatPassword) {
 					AuthService.register({
 						firstName: $scope.firstName,
 						lastName: $scope.lastName,
@@ -15,7 +16,7 @@
 					}).then(function (response) {
 						$location.path("/toDoItems");
 					}, function (error) {
-						$scope.errorMessage = error;
+						$scope.errorMessage = angular.fromJson(error).message;
 					});
 				}
 				else {
