@@ -27,8 +27,7 @@ D:\University\ПМІ-32\ToDoList\DataAccessLayer\bin\Debug\DataAccess.Entities.p
 D:\University\ПМІ-32\ToDoList\DataAccessLayer\bin\Debug\EntityFramework.xml
 D:\University\ПМІ-32\ToDoList\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
 D:\University\ПМІ-32\ToDoList\DataAccessLayer\obj\Debug\DataAccess.Configurations.csprojResolveAssemblyReference.cache
-D:\University\ПМІ-32\ToDoList\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.pesik2.resources
-D:\University\ПМІ-32\ToDoList\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.pesik.resources
-D:\University\ПМІ-32\ToDoList\DataAccessLayer\obj\Debug\DataAccess.Configurations.csproj.GenerateResource.Cache
 D:\University\ПМІ-32\ToDoList\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 D:\University\ПМІ-32\ToDoList\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+D:\University\ПМІ-32\ToDoList\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.pesYoupta.resources
+D:\University\ПМІ-32\ToDoList\DataAccessLayer\obj\Debug\DataAccess.Configurations.csproj.GenerateResource.Cache
