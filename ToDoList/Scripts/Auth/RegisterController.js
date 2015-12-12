@@ -1,5 +1,5 @@
-﻿app.controller("RegisterController", ["$scope", "$modalInstance", "$location", "AuthService",
-	function ($scope, $modalInstance, $location, AuthService) {
+﻿app.controller("RegisterController", ["$scope", "$modalInstance", "$location", "AuthService", "localStorageService",
+	function ($scope, $modalInstance, $location, AuthService, localStorageService) {
 		$scope.closeModal = function () {
 			$modalInstance.close();
 			$location.path("/");
@@ -14,6 +14,9 @@
 						userName: $scope.userName,
 						password: $scope.password
 					}).then(function (response) {
+						localStorageService.set("userInfo", {
+							userName: $scope.userName
+						});
 						$location.path("/toDoItems");
 					}, function (error) {
 						$scope.errorMessage = angular.fromJson(error).message;

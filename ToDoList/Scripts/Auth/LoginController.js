@@ -1,11 +1,14 @@
-﻿app.controller("LoginController", ["$scope", "$location", "$modal", "AuthService",
-	function ($scope, $location, $modal, AuthService) {
+﻿app.controller("LoginController", ["$scope", "$location", "$modal", "AuthService", "localStorageService",
+	function ($scope, $location, $modal, AuthService, localStorageService) {
 		$scope.login = function () {
 			if ($scope.loginForm.$valid) {
 				AuthService.login({
 					userName: $scope.userName,
 					password: $scope.password
 				}).then(function (ok) {
+					localStorageService.set("userInfo", {
+						userName: $scope.userName
+					});
 					$location.path("/toDoItems");
 				}, function (error) {
 					$scope.errorMessage = angular.fromJson(error).message;
