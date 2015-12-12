@@ -24,3 +24,4 @@ D:\University\ПМІ-32\ToDoList\DataAccess.Entities\bin\Debug\Microsoft.AspNet.
 D:\University\ПМІ-32\ToDoList\DataAccess.Entities\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 D:\University\ПМІ-32\ToDoList\DataAccess.Entities\obj\Debug\DataAccess.Entities.dll
 D:\University\ПМІ-32\ToDoList\DataAccess.Entities\obj\Debug\DataAccess.Entities.pdb
+D:\University\ПМІ-32\ToDoList\DataAccess.Entities\obj\Debug\DataAccess.Entities.csprojResolveAssemblyReference.cache

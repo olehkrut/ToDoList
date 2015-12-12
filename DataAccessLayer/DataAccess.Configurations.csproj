@@ -49,13 +49,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DbInitializer.cs" />
-    <Compile Include="Migrations\201512080924081_pesik2.cs" />
-    <Compile Include="Migrations\201512080924081_pesik2.Designer.cs">
-      <DependentUpon>201512080924081_pesik2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201512080926547_pesik.cs" />
-    <Compile Include="Migrations\201512080926547_pesik.Designer.cs">
-      <DependentUpon>201512080926547_pesik.cs</DependentUpon>
+    <Compile Include="Migrations\201512121438046_pesYoupta.cs" />
+    <Compile Include="Migrations\201512121438046_pesYoupta.Designer.cs">
+      <DependentUpon>201512121438046_pesYoupta.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ToDoListDbContext.cs" />
@@ -72,11 +68,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201512080924081_pesik2.resx">
-      <DependentUpon>201512080924081_pesik2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201512080926547_pesik.resx">
-      <DependentUpon>201512080926547_pesik.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201512121438046_pesYoupta.resx">
+      <DependentUpon>201512121438046_pesYoupta.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

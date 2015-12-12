@@ -7,13 +7,13 @@ namespace DataAccessLayer.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class pesik2 : IMigrationMetadata
+    public sealed partial class pesYoupta : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(pesik2));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(pesYoupta));
         
         string IMigrationMetadata.Id
         {
-            get { return "201512080924081_pesik2"; }
+            get { return "201512121438046_pesYoupta"; }
         }
         
         string IMigrationMetadata.Source
