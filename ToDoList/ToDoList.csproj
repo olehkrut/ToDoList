@@ -134,7 +134,8 @@
     <Content Include="Scripts\ToDoItemList\ToDoItemListController.js" />
     <Content Include="Scripts\ToDoItemList\ToDoItemService.js" />
     <Content Include="Scripts\ToDoItemList\toDoItemList.html" />
-    <Content Include="Views\LoginPage.html" />
+    <Content Include="Scripts\Auth\LoginPage.html" />
+    <Content Include="Scripts\Auth\RegisterModal.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -142,6 +143,8 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ToDoItemController.cs" />
+    <Compile Include="Models\LoginUserModel.cs" />
+    <Compile Include="Models\RegisterUserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -159,7 +162,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+    <Folder Include="Views\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataAccess.Entities\DataAccess.Entities.csproj">

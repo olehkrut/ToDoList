@@ -14,6 +14,7 @@ namespace DataAccessLayer
 			Database.SetInitializer(new DbInitializer());
 		}
 
+		public DbSet<ApplicationUser> Users { get; set; }
 		public DbSet<ToDoItem> ToDoItems { get; set; }
 	}
 }

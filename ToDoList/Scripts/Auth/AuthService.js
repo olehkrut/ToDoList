@@ -1,3 +1,3 @@
-﻿app.factory("AuthService", function ($http) {
-
+﻿app.factory("AuthService", function ($http, $q) {
+	
 });

@@ -11,7 +11,7 @@
 			})
 			.when('/', {
 				controller: "LoginController",
-				templateUrl: "Views/LoginPage.html"
+				templateUrl: "Scripts/Auth/LoginPage.html"
 			})
 			.otherwise({
 				redirectTo: '/'
