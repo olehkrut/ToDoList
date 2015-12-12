@@ -17,3 +17,21 @@
 				redirectTo: '/'
 			});
 	});
+
+app.controller("IndexController", function ($scope, $location, localStorageService) {
+	$scope.isAuthorize = function () {
+		var userInfo = localStorageService.get("userInfo");
+		if (userInfo) {
+			$location.path("/toDoItems");
+			return true;
+		}
+		else {
+			$location.path("/");
+		}
+	}
+
+	$scope.signOut = function () {
+		localStorageService.set("userInfo", null);
+
+	}
+})
