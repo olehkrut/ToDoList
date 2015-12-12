@@ -1,4 +1,4 @@
-﻿var app = angular.module("ToDoApp", ["ngResource", "ngRoute", 'ui.bootstrap'])
+﻿var app = angular.module("ToDoApp", ["ngResource", "ngRoute", 'ui.bootstrap', 'LocalStorageModule'])
 	.config(function ($routeProvider) {
 
 		$routeProvider.when('/toDoItems', {
