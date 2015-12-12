@@ -1,7 +1,7 @@
-﻿var app = angular.module("ToDoApp", ["ngResource", "ngRoute"])
+﻿var app = angular.module("ToDoApp", ["ngResource", "ngRoute", 'ui.bootstrap'])
 	.config(function ($routeProvider) {
 
-		$routeProvider.when('/ToDoItems', {
+		$routeProvider.when('/toDoItems', {
 			controller: 'ToDoItemListController',
 			templateUrl: 'Scripts/ToDoItemList/toDoItemList.html'
 		})

@@ -6,10 +6,19 @@
 					userName: $scope.userName,
 					password: $scope.password
 				}).then(function (ok) {
-
+					$location.path("/toDoItems");
 				}, function (error) {
-
+					$scope.errorMessage = "such user already exists";
 				});
 			}
+		}
+
+		$scope.register = function () {
+			var modal = $modal.open({
+				animation: true,
+				templateUrl: "Scripts/Auth/RegisterModal.html",
+				controller: "RegisterController",
+				size: "md"
+			})
 		}
 }]);
