@@ -25,4 +25,14 @@
 		});
 		return deferred.promise;
 	}
+
+	function search(searchInfo) {
+	    var deferred = $q.defer();
+	    $http.post("/api/account/search", searchInfo).success(function (response) {
+	        deferred.resolve(response);
+	    }).error(function (error) {
+	        deferred.reject(error);
+	    });
+	    return deferred.promise;
+	}
 });

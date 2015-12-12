@@ -31,3 +31,17 @@ D:\University\ПМІ-32\ToDoList\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 D:\University\ПМІ-32\ToDoList\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
 D:\University\ПМІ-32\ToDoList\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.pesYoupta.resources
 D:\University\ПМІ-32\ToDoList\DataAccessLayer\obj\Debug\DataAccess.Configurations.csproj.GenerateResource.Cache
+C:\Users\Andrew\Documents\ToDoList\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+C:\Users\Andrew\Documents\ToDoList\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\Andrew\Documents\ToDoList\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\Andrew\Documents\ToDoList\DataAccessLayer\bin\Debug\DataAccess.Entities.dll
+C:\Users\Andrew\Documents\ToDoList\DataAccessLayer\bin\Debug\EntityFramework.dll
+C:\Users\Andrew\Documents\ToDoList\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Andrew\Documents\ToDoList\DataAccessLayer\bin\Debug\DataAccess.Entities.pdb
+C:\Users\Andrew\Documents\ToDoList\DataAccessLayer\bin\Debug\EntityFramework.xml
+C:\Users\Andrew\Documents\ToDoList\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Andrew\Documents\ToDoList\DataAccessLayer\obj\Debug\DataAccess.Configurations.csprojResolveAssemblyReference.cache
+C:\Users\Andrew\Documents\ToDoList\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.pesYoupta.resources
+C:\Users\Andrew\Documents\ToDoList\DataAccessLayer\obj\Debug\DataAccess.Configurations.csproj.GenerateResource.Cache
+C:\Users\Andrew\Documents\ToDoList\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\Andrew\Documents\ToDoList\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

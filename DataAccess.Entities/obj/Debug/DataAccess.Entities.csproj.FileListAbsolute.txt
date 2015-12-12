@@ -24,3 +24,16 @@ D:\University\ПМІ-32\ToDoList\DataAccess.Entities\bin\Debug\Microsoft.AspNet.
 D:\University\ПМІ-32\ToDoList\DataAccess.Entities\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 D:\University\ПМІ-32\ToDoList\DataAccess.Entities\obj\Debug\DataAccess.Entities.dll
 D:\University\ПМІ-32\ToDoList\DataAccess.Entities\obj\Debug\DataAccess.Entities.pdb
+C:\Users\Andrew\Documents\ToDoList\DataAccess.Entities\bin\Debug\DataAccess.Entities.dll.config
+C:\Users\Andrew\Documents\ToDoList\DataAccess.Entities\bin\Debug\DataAccess.Entities.dll
+C:\Users\Andrew\Documents\ToDoList\DataAccess.Entities\bin\Debug\DataAccess.Entities.pdb
+C:\Users\Andrew\Documents\ToDoList\DataAccess.Entities\bin\Debug\EntityFramework.dll
+C:\Users\Andrew\Documents\ToDoList\DataAccess.Entities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Andrew\Documents\ToDoList\DataAccess.Entities\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Andrew\Documents\ToDoList\DataAccess.Entities\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Andrew\Documents\ToDoList\DataAccess.Entities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Andrew\Documents\ToDoList\DataAccess.Entities\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Andrew\Documents\ToDoList\DataAccess.Entities\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Andrew\Documents\ToDoList\DataAccess.Entities\obj\Debug\DataAccess.Entities.csprojResolveAssemblyReference.cache
+C:\Users\Andrew\Documents\ToDoList\DataAccess.Entities\obj\Debug\DataAccess.Entities.dll
+C:\Users\Andrew\Documents\ToDoList\DataAccess.Entities\obj\Debug\DataAccess.Entities.pdb
