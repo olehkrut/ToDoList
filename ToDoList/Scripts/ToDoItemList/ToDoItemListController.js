@@ -1,10 +1,13 @@
 ﻿app.controller('ToDoItemListController', ["$scope", "$location", "ToDoItemService", "localStorageService", "$modal",
 	function ($scope, $location, toDoItemService, localStorageService, $modal) {
-		toDoItemService.getAllItems(localStorageService.get("userInfo").userId).then(function (response) {
-			$scope.items = response;
-		}, function (error) {
-			console.log(error);
-		});
+		function init() {
+			toDoItemService.getAllItems(localStorageService.get("userInfo").userId).then(function (response) {
+				$scope.items = response;
+			}, function (error) {
+				console.log(error);
+			});
+		}
+		init();
 		
 		$scope.isAuthorize = function () {
 		var userInfo = localStorageService.get("userInfo");
@@ -28,6 +31,8 @@
 				controller: 'CreateCtrl',
 				templateUrl: 'detail.html',
 				size: 'sm'
+			}).result.then(function (ok) {
+				init();
 			});
 		}
 	}
