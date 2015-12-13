@@ -5,8 +5,14 @@
 			controller: 'ToDoItemListController',
 			templateUrl: 'Scripts/ToDoItemList/toDoItemList.html'
 		})
-			.when('/new', { controller: CreateCtrl, templateUrl: 'detail.html' })
-            .when('/edit/:itemId', { controller: EditCtrl, templateUrl: 'detail.html' })
+			.when('/new', {
+				controller: 'CreateCtrl',
+				templateUrl: 'detail.html'
+			})
+            .when('/edit/:itemId', {
+            	controller: EditCtrl,
+            	templateUrl: 'detail.html'
+            })
 			.when('/', {
 				controller: "LoginController",
 				templateUrl: "Scripts/Auth/LoginPage.html"
@@ -16,41 +22,34 @@
 			});
 	});
 
-var CreateCtrl = function ($scope, $location, Todo) {
+var CreateCtrl = function ($scope, $location, $modalInstance, ToDoItemService, localStorageService) {
     $scope.btnName = "Add";
 
+    $scope.close = function () {
+    	$modalInstance.close();
+    }
+
     $scope.save = function () {
-        Todo.save($scope.item, function () {
-            $location.path('/');
-        });
+    	$scope.item.userId = localStorageService.get("userInfo").userId;
+    	ToDoItemService.newItem($scope.item).then(function (response) {
+    		$location.path("/toDoItems");
+    		$modalInstance.close();
+    	});
     };
 };
 
-var EditCtrl = function ($scope, $routeParams, $location, Todo) {
-    $scope.item = Todo.get({ id: $routeParams.itemId });
+app.controller("CreateCtrl", CreateCtrl);
+
+var EditCtrl = function ($scope, $routeParams, $location, ToDoItemService) {
+	ToDoItemService.getItem($routeParams.itemId).then(function (response) {
+		$scope.item = response;
+	});
     $scope.btnName = "Edit";
 
     $scope.save = function () {
-        Todo.update({ id: $scope.item.TodoItemId }, $scope.item, function () {
-            $location.path('/');
+        ToDoItemService.editItem($scope.item).then(function (response) {
+            $location.path('/toDoItems');
         });
     };
 };
 
-app.controller("IndexController", function ($scope, $location, localStorageService) {
-	$scope.isAuthorize = function () {
-		var userInfo = localStorageService.get("userInfo");
-		if (userInfo) {
-			$location.path("/toDoItems");
-			return true;
-		}
-		else {
-			$location.path("/");
-		}
-	}
-
-	$scope.signOut = function () {
-		localStorageService.set("userInfo", null);
-
-	}
-})

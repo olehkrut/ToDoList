@@ -7,7 +7,8 @@
 					password: $scope.password
 				}).then(function (ok) {
 					localStorageService.set("userInfo", {
-						userName: $scope.userName
+						userName: $scope.userName,
+						userId: ok
 					});
 					$location.path("/toDoItems");
 				}, function (error) {

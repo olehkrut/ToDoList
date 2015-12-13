@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNet.Identity.EntityFramework;
+using System.ComponentModel.DataAnnotations;
 
 namespace DataAccess.Entities
 {
@@ -10,6 +11,7 @@ namespace DataAccess.Entities
 			Items = new List<ToDoItem>();
 		}
 
+		[Key]
 		public int ApplicationUserId { get; set; }
 		public string FirstName { get; set; }
 		public string LastName { get; set; }

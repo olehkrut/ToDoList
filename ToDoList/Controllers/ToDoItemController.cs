@@ -9,77 +9,88 @@ using System.Net.Http;
 using System.Web;
 using System.Net;
 using System.Data.Entity;
+using ToDoList.Models;
 
 namespace ToDoList.Controllers
 {
+	[RoutePrefix("api/toDoItem")]
 	public class ToDoItemController : ApiController
 	{
-        private readonly ToDoListDbContext db = new ToDoListDbContext();
 
-		public IEnumerable<ToDoItem> Get()
+		public IEnumerable<ToDoItemModel> Get(int userId)
 		{
 			using (ToDoListDbContext context = new ToDoListDbContext())
 			{
-				var pes = context.ToDoItems.First();
-				return context.ToDoItems.ToList();
+				var listik = context.ToDoItems.Where(td => td.UserId == userId).ToList<ToDoItem>()
+					.Select(td => Map(td));
+				return listik;
 			}
 		}
 
-
-        public HttpResponseMessage PutTodoItem(int id, ToDoItem todoitem)
-        {
-            if (ModelState.IsValid && id == todoitem.ToDoItemId)
-            {
-                db.Entry(todoitem).State = EntityState.Modified;
-
-                try
-                {
-                    db.SaveChanges();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    return Request.CreateResponse(HttpStatusCode.NotFound);
-                }
-
-                return Request.CreateResponse(HttpStatusCode.OK);
-            }
-            else
-            {
-                return Request.CreateResponse(HttpStatusCode.BadRequest);
-            }
-        }
-
-        public HttpResponseMessage PostTodoItem(ToDoItem todoitem)
-        {
-            if (ModelState.IsValid)
-            {
-                db.ToDoItems.Add(todoitem);
-                db.SaveChanges();
-
-                HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.Created, todoitem);
-                response.Headers.Location = new Uri(Url.Link("DefaultApi", new { id = todoitem.ToDoItemId }));
-                return response;
-            }
-            else
-            {
-                return Request.CreateResponse(HttpStatusCode.BadRequest);
-            }
-        }
-
-
-		// POST api/<controller>
-		public void Post([FromBody]string value)
+		private ToDoItemModel Map(ToDoItem item)
 		{
+			return new ToDoItemModel
+			{
+				ToDoContent = item.ToDoContent,
+				ToDoItemId = item.ToDoItemId,
+				DueDate = item.DueDate,
+				Priority = item.Priority
+			};
 		}
 
-		// PUT api/<controller>/5
-		public void Put(int id, [FromBody]string value)
+		public ToDoItem GetToDoItem(int itemId)
 		{
+			using (ToDoListDbContext context = new ToDoListDbContext())
+			{
+				return context.ToDoItems.Where(td => td.ToDoItemId == itemId).FirstOrDefault();
+			}
 		}
 
-		// DELETE api/<controller>/5
-		public void Delete(int id)
+		[Route("edit")]
+		public IHttpActionResult EditTodoItem(ToDoItem todoitem)
 		{
+			if (ModelState.IsValid)
+			{
+				using (ToDoListDbContext db = new ToDoListDbContext())
+				{
+					db.Entry(todoitem).State = EntityState.Modified;
+
+					try
+					{
+						db.SaveChanges();
+					}
+					catch (DbUpdateConcurrencyException)
+					{
+						return NotFound();
+					}
+
+					return Ok();
+				}
+			}
+			else
+			{
+				return BadRequest();
+			}
+		}
+
+		[Route("createItem")]
+		public IHttpActionResult PostTodoItem(ToDoItem todoitem)
+		{
+
+			if (ModelState.IsValid)
+			{
+				using (ToDoListDbContext db = new ToDoListDbContext())
+				{
+					db.ToDoItems.Add(todoitem);
+					db.SaveChanges();
+
+					return Ok();
+				}
+			}
+			else
+			{
+				return BadRequest();
+			}
 		}
 	}
 }

@@ -45,3 +45,4 @@ F:\Любомир\C# exer\newto\DataAccessLayer\obj\Debug\DataAccessLayer.Migrat
 F:\Любомир\C# exer\newto\DataAccessLayer\obj\Debug\DataAccess.Configurations.csproj.GenerateResource.Cache
 F:\Любомир\C# exer\newto\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 F:\Любомир\C# exer\newto\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+D:\University\ПМІ-32\ToDoList\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.theLast.resources

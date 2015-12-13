@@ -24,7 +24,7 @@ namespace ToDoList.Controllers
 					.FirstOrDefault();
 				if (user != null)
 				{
-					return Ok();
+					return Ok(user.ApplicationUserId);
 				}
 				else
 				{
@@ -59,7 +59,7 @@ namespace ToDoList.Controllers
 				};
 				context.Users.Add(user);
 				context.SaveChanges();
-				return Ok();
+				return Ok(user.ApplicationUserId);
 			}
 		}
 	}
