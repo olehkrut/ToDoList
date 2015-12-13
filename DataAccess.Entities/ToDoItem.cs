@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DataAccess.Entities
 {
@@ -10,6 +11,7 @@ namespace DataAccess.Entities
 		public DateTime? DueDate { get; set; }
 		public int UserId { get; set; }
 
+		[ForeignKey("UserId")]
 		public virtual ApplicationUser User { get; set; }
 
 		//public virtual ApplicationUser Owner { get; set; }

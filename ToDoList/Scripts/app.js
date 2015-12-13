@@ -6,9 +6,13 @@
 			templateUrl: 'Scripts/ToDoItemList/toDoItemList.html'
 		})
 			.when('/new', {
-				controller: 'CreateNewItemController',
-				templateUrl: 'Scripts/NewItem/detail.html'
+				controller: 'CreateCtrl',
+				templateUrl: 'detail.html'
 			})
+            .when('/edit/:itemId', {
+            	controller: EditCtrl,
+            	templateUrl: 'detail.html'
+            })
 			.when('/', {
 				controller: "LoginController",
 				templateUrl: "Scripts/Auth/LoginPage.html"
@@ -18,20 +22,34 @@
 			});
 	});
 
-app.controller("IndexController", function ($scope, $location, localStorageService) {
-	$scope.isAuthorize = function () {
-		var userInfo = localStorageService.get("userInfo");
-		if (userInfo) {
-			$location.path("/toDoItems");
-			return true;
-		}
-		else {
-			$location.path("/");
-		}
-	}
+var CreateCtrl = function ($scope, $location, $modalInstance, ToDoItemService, localStorageService) {
+    $scope.btnName = "Add";
 
-	$scope.signOut = function () {
-		localStorageService.set("userInfo", null);
+    $scope.close = function () {
+    	$modalInstance.close();
+    }
 
-	}
-})
+    $scope.save = function () {
+    	$scope.item.userId = localStorageService.get("userInfo").userId;
+    	ToDoItemService.newItem($scope.item).then(function (response) {
+    		$location.path("/toDoItems");
+    		$modalInstance.close();
+    	});
+    };
+};
+
+app.controller("CreateCtrl", CreateCtrl);
+
+var EditCtrl = function ($scope, $routeParams, $location, ToDoItemService) {
+	ToDoItemService.getItem($routeParams.itemId).then(function (response) {
+		$scope.item = response;
+	});
+    $scope.btnName = "Edit";
+
+    $scope.save = function () {
+        ToDoItemService.editItem($scope.item).then(function (response) {
+            $location.path('/toDoItems');
+        });
+    };
+};
+

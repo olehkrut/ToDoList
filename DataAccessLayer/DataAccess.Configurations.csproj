@@ -53,6 +53,10 @@
     <Compile Include="Migrations\201512121438046_pesYoupta.Designer.cs">
       <DependentUpon>201512121438046_pesYoupta.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201512122353214_theLast.cs" />
+    <Compile Include="Migrations\201512122353214_theLast.Designer.cs">
+      <DependentUpon>201512122353214_theLast.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ToDoListDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -70,6 +74,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201512121438046_pesYoupta.resx">
       <DependentUpon>201512121438046_pesYoupta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512122353214_theLast.resx">
+      <DependentUpon>201512122353214_theLast.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
