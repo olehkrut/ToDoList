@@ -30,7 +30,7 @@
 				animation: true,
 				controller: 'CreateCtrl',
 				templateUrl: 'detail.html',
-				size: 'sm'
+				size: 'md'
 			}).result.then(function (ok) {
 				init();
 			});

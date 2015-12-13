@@ -25,7 +25,7 @@
 var CreateCtrl = function ($scope, $location, $modalInstance, ToDoItemService, localStorageService) {
     $scope.btnName = "Add";
 
-    $scope.close = function () {
+    $scope.closeModal = function () {
     	$modalInstance.close();
     }
 

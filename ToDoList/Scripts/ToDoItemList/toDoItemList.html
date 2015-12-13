@@ -32,7 +32,7 @@
 	<th>Todo</th>
 	<th>Priority</th>
 	<th>Due</th>
-	<th><a href="#/new"><i class="img-circle">+</i></a></th>
+	<th><a href="#"><i class="img-circle" ng-click="newItem()">+</i></a></th>
 	</thead>
 
 	<tbody>
@@ -41,7 +41,7 @@
 		<td>{{item.priority}}</td>
 		<td>{{item.dueDate}}</td>
         <td>
-            <a href="#/edit/{{item.TodoItemId}}"><i class="btn-block">Edit</i>/a>
+            <a href="#/edit/{{item.TodoItemId}}"><i class="btn-block">Edit</i></a>
             <!--<a ng-click="delete()"><i class="icon-remove"></i></a>-->
         </td>
 	</tr>
